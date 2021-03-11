@@ -1,0 +1,503 @@
+
+body{
+    
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-rows: 15% auto auto 8%;
+    gap: 10px;
+
+}
+
+header{
+    grid-column: 1/5;
+    border: solid black;
+    display: grid;
+    grid-auto-columns: 4fr;
+    grid-template-columns:15% 20% 40% auto;
+    background-color: blue;
+    color: white;
+   
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+header #sistema_integrado{
+    display: grid;
+    grid-column: 3/4;
+    justify-self: start;
+    align-content: center;
+    padding-bottom: 10px;
+}
+
+
+
+    #usuariocabecera{
+    grid-column: 4/5;
+    justify-self: center;
+    align-self: center;
+  
+    
+}
+
+
+nav{
+    
+    grid-column: 1/5;
+    border: solid black; 
+    padding: 0px; 
+    margin: 0px;  
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto ;
+    grid-template-columns: 70% auto;
+  
+ 
+    padding:0px;
+    margin: 0px;
+}
+nav ul #boton1
+{
+    grid-column:1/2
+}
+
+nav #ulnav #ul1 div 
+{
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    justify-content: center;
+    display: block;
+    border:solid black;
+    text-align: center;
+}
+
+
+
+
+nav #ulnav 
+{
+    display: flex;
+    grid-template-rows: 1fr;
+    grid-template-columns:  auto auto  auto auto;
+    grid-template-columns:  auto auto auto auto;
+    justify-self: stretch;
+    padding:0px;
+    margin: 0px;
+    padding-inline-start: 0px;
+    list-style-type:none;
+  
+}
+nav #ulnav #ul1 li
+{
+    width: 15%;
+}
+
+
+
+nav #ulnav2  li #lupa
+{
+    width: 20px;
+    height: 20px;
+}
+
+nav #ulnav li
+{
+justify-self: center;
+text-align: center;
+margin: 0%;
+list-style: none;
+ width: 100%;
+ border-right: solid 1px black;
+ background-color: rgba(226, 220, 190, 0.904);
+}
+nav #ulnav li img
+{
+    justify-self: center;
+}
+
+nav #botonoculto
+{ visibility: hidden;
+    display: none;
+}
+
+nav #navmovil
+{
+    visibility: hidden;
+    display: none;
+
+}
+nav  #botonuser
+{
+    visibility: hidden;
+    display: none;
+
+}
+
+nav ul #boton1
+{
+    display: grid;
+    grid-column:1/2;
+}
+nav #ulnav #boton2
+{
+    display: grid;
+    grid-column:2/3;
+}
+nav #ulnav #boton3
+{   
+    justify-self: center;
+    display: grid;
+    grid-column:3/4;
+}
+nav #ulnav #boton4
+{
+    display: grid;
+    grid-column:4/5;
+}
+nav #ulnav2
+{   
+    list-style-type:none;   
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0%;
+background-color: darkcyan;
+padding-inline-start: 0px;
+}
+nav #ulnav2 #formbuscar
+{
+    
+    grid-column:5/6;
+    align-self: center;
+justify-self: end;
+list-style-type: none;
+}
+
+nav #ulnav2 #formbuscar #inputbuscador
+{
+    min-width: 10%;
+
+}
+
+
+main{
+    grid-column: 1/5;
+    border: solid black;
+    background-color: lightblue;
+    color: black;
+    font-family: Courier New, Courier, monospace;
+    display:grid;
+    gap: 10px;
+    justify-content: center;
+    
+}
+
+fieldset
+{
+width: 80vw;
+}
+#formain
+{
+    display:grid;
+    justify-content: center;
+}
+
+main #span1     button{
+    justify-content: stretch;
+    width:190px;
+    height: 20px;
+}
+main #span2
+{
+    
+    text-align: center;
+}
+main #span2>button
+{
+    width:180px;
+}
+footer{
+    grid-column: 1/5;
+    border: solid black;
+    background-color: cornflowerblue;
+    color: black;
+    display: grid;
+    grid-auto-columns: 3fr;
+    align-items: center;
+    justify-items: center;
+}
+
+footer #que_hacemos{
+    grid-column: 1/2;
+}
+
+footer #enlaces{
+    grid-column: 2/3;
+}
+
+footer #contáctanos{
+    grid-column: 3/4;
+}
+
+
+header img{
+    width: 50px;
+    height: 50px;
+    clip-path: circle(50%);
+    opacity: 0.6;
+}
+
+nav img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+aside img{
+    width: 30px;
+    height: 30px;
+}
+
+textarea {
+
+    resize: none;
+}
+
+@media screen and (max-width:370px)
+{
+
+body
+{
+    
+    display:grid;
+    width: 100%;
+grid-template-columns:auto;
+grid-template-rows:auto auto auto auto ;   
+grid-template-areas: 
+                    "header"
+                    "nav"
+                    "main"
+                    "footer";
+
+}   
+header{
+   grid-area: header;
+    border: solid black;
+    display: grid;
+    grid-auto-columns: 2fr;
+    grid-template-columns:70% auto;
+    background-color: blue;
+    color: white;
+   
+    font-family: Verdana, Geneva, sans-serif;
+}
+header #sistema_integrado{
+    display: grid;
+    justify-self: center;
+    
+    align-content: center;
+    padding-bottom: 10px;
+    grid-column:1/3;
+    padding-left: 10px;
+    font-size: 15px;
+}
+#usuariocabecera{
+    display: none;
+    visibility: hidden;
+    
+}
+
+nav{
+    grid-area: nav;
+    border: solid black;
+    grid-template-columns:  1fr 1fr;
+    grid-template-columns:  auto auto;
+ display: grid;
+ position: sticky;
+  padding: 0px;
+  margin:0px ;
+  background-color: rgb(196, 196, 196);
+
+
+}
+nav #ulnav
+{
+    display: none;
+    visibility: visible;
+}
+/*pasarlo a la web*/
+nav  #botonoculto 
+{ 
+    visibility: visible;
+    display: block;
+
+   
+    background-color: rgb(0, 0, 0);
+    grid-column: 1/2;
+    color: rgb(255, 255, 255);
+    border: solid black 1px;
+    width: 50px;
+    height: auto;
+  
+}
+
+nav #botonuser
+{ 
+    visibility: visible;
+    display: none;
+
+}
+#ulnav #boton1
+{
+    justify-self: center;
+    display: none;
+}
+#ulnav  #boton2
+{
+    justify-self: center;
+    display: none;
+}
+nav #ulnav #boton3
+{   
+    justify-self: center;
+    display: none;
+}
+#ulnav #boton4
+{
+    justify-self: center;
+    display: none;
+}
+#ulnav2 #formbuscar
+{
+    visibility: hidden;
+    display: none;
+}
+nav #ulnav2
+{   
+    
+    list-style-type:none;   
+    display: none;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0%;
+background-color: none;
+padding-inline-start: 0px;
+}
+legend
+{
+    background-color: gray;
+  color: white;
+  padding: 2px 3px;
+  font-size: 10px;
+  
+}
+    main{
+        grid-area:main;
+            border: solid black;
+            background-color: lightblue;
+            color: black;
+            font-family: Courier New, Courier, monospace;
+            display:grid;
+            gap: 10px;
+            justify-content: center;
+            font-size: 30% ;
+            height: auto;
+            
+        }
+main label
+{
+  font-size: 10px ;
+}
+
+
+fieldset legend
+{
+    padding-top: 2px;
+}
+fieldset
+{
+margin-top: 1%;
+display:grid;
+width: 85%;
+height: auto;
+justify-self: center;
+background-color: rgb(196, 196, 196);;
+}
+
+main>fieldset>#span2
+{
+    text-align: center;
+}
+main #span1     button{
+    justify-content: stretch;
+    width:130px;
+    height: 20px;
+    margin: 0px;
+}
+
+main #código
+{
+    width: 40%;
+    height: 40%;
+}
+main>fieldset>#span1
+{display: block;
+margin-bottom: 0%;
+text-align: center;
+border-bottom: 1px solid black;
+height: 70px;
+}
+
+main>fieldset>#span1>button
+{
+    max-width: 27%;
+    max-height: 24%;
+text-align: center;
+font-size: 12px;
+}
+main>fieldset>#span1>input
+{
+    margin-right: 5%;
+    height: 18%;
+    width: 63.2%;
+}
+footer{
+    grid-area: footer;
+    border: solid black;
+    background-color: cornflowerblue;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+footer #que_hacemos
+{
+    display: grid;
+    grid-column: 1/4;
+    justify-self: center;
+}
+footer #enlaces
+{
+    display: grid;
+    grid-column: 1/4;
+    justify-self: center;
+}
+footer #contáctanos
+{
+    display: grid;
+    grid-column: 1/4;
+    justify-self: center;
+}
+footer :hover
+{
+    color: green;
+}
+}
+   
+

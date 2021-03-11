@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea1_Santillan</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+            
+            
+            <h1 id="sistema_integrado">Sistema integrado de gestión</h1>
+            
+
+            <div id="usuariocabecera">
+            <img class="usuario" src="Imagenes/usuario.jpg" alt="Foto del usuario">
+            <span>
+                
+            <label>
+                    Usuario 1
+            </label>
+
+            </span>
+            </div>
+                   
+    </header>
+
+    <nav>
+        <button id="botonoculto">&#9776;</button>
+        <ul id="navmovil">
+        <li id="botonuser"><img class="usuario" src="Imagenes/usuario.jpg" alt="Foto del usuario">
+                        
+                    <label>
+                            Usuario 1
+                    </label>
+        
+                    </span>
+        </ul>            
+
+                
+
+            <ul id="ulnav">
+         
+               
+                
+                   <li id="boton1"><img      src="Imagenes/cruz.jpg" alt="Simbolo de suma para agregar producto"><br><label for="agregar_producto">Agregar producto</label> <!--
+	            --><li id="boton2"><img  src="Imagenes/lápiz.png" alt="Simbolo de datos para existencias"><br><label fot="administrar_categorías">Administrar categorías</label><!--
+	            --><li id="boton3"><img  src="Imagenes/base de datos.png" alt="Simbolo de datos para existencias"><br><label for="existencias">Existencias</label><!--
+	            --><li id="boton4"><img        src="Imagenes/tarjeta.png" alt="Simbolo de tarjeta para administrar pagos"><br><label for="administrar_pagos">Administrar pagos</label><!---->
+               
+            </ul>
+            
+            <ul id="ulnav2">   
+                <li id="formbuscar">
+                    <label for="buscador">Buscar en la web</label>
+                    <input type="search" id="inputbuscador" placeholder="Buscar">
+            
+                    <button id="botonbuscar"  >
+                    <input type="image" id="lupa" src="Imagenes/lupa.png" >
+                    <label for="textoboton"> buscar</label>
+                    </button>
+                <li>  
+                </ul> 
+            
+            </ul>
+            
+    </nav>
+
+    <main>
+       
+        <fieldset>
+            <legend>Agregar Producto</legend>
+            <form id="formain">
+            <label for="código">Código* </label>
+            <span id="span1">
+            <input type="tel" id="código" placeholder="Solo números" pattern="[0-9]{6}" title="Debes ingresar 6 números" required>
+           <button type="submit" id=validar value="Validar">Validar</button></span>
+
+           <label for="nombre">Nombre*</label>
+            <input type="text" id="nombre" placeholder="Solo letras y números" pattern="[a-zA-Z0-9]{2,100}" title="Debes ingresar solo letras y números" required>
+            <br>
+           <br>
+           <label for="abreviatura">Abreviatura</label>
+           <input type="text" id="abreviatura" maxlength="10" placeholder="Solo letras" pattern="[a-zA-Z]{2,10}" title="Debes ingresar solo letras">
+           <br>
+           <br>
+          <label for="categoría">Categoría*</label>
+          <select id="categoría" required>
+              <option value="categoría">Lácteos</option>
+              <option value="categoría">Panes especiales</option>
+              <option value="categoría">Pasteles</option>
+          </select>
+          <br>
+           <br>
+           <label for="ruc">RUC Proveedor*</label>
+           <input type=tel id="ruc" placeholder="Solo números" pattern="[0-9]{11}" title="Debes ingresar 11 números" required>
+           <br>
+           <br>
+           <label for="precio">Precio*</label>
+           <input type="number" id="precio" step="0.01" title="Solo números decimales con 2 dígitos" required>
+           <br>
+           <br>
+           <label for="color_etiqueta">Color de etiqueta</label>
+           <input type="color" id="color_etiqueta">
+           <br>
+           <br>
+           <label for="fecha">Fecha*</label>
+           <input type="date" id="fecha" required>
+           <br>
+           <br>
+           <label for="estado">Estado*</label>
+           <label for="activo">Activo</label>
+           <input type="radio" id="activo" name="estado" required>
+           <label for="Suspendido">Suspendido</label>
+           <input type="radio" id="Suspendido" name="estado">
+           <label for="De baja">De baja</label>
+           <input type="radio" id="De baja" name="estado">
+           <br>
+           <br>
+           <label for="impuesto">Afecto a impuesto*</label>
+           <input type="checkbox" id="impuesto" required>
+           <br>
+           
+           <label for="foto">Foto</label>
+           <input type="file" id="foto" accept="image/png , image/jpg">
+           <br>
+           <label for="descripción">Descripción</label>
+           <textarea id="descripción"></textarea>
+           <br>
+           <span id="span2">
+            <button type="submit" value="grabar">Grabar</button>
+            <button type="reset" value="limpiar">Limpiar</button></span>
+        </form>
+        </fieldset>
+
+
+        
+    </main>
+
+    <footer>
+        <div id="que_hacemos" >
+            <a href="#">¿Qué hacemos?</a>
+        </div>
+        <div id="enlaces">
+            <a href="#">
+                Enlaces principales
+            </a>
+        </div>
+        <div id="contáctanos">
+            <a href="#">
+                Contáctanos
+            </a>
+        </div>
+
+    </footer>
+
+</body>
+</html>
